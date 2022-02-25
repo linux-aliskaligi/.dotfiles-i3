@@ -1,0 +1,10 @@
+#!/usr/bin/env zsh
+DOTFILES="~/.dotfiles-i3/"
+STOW_FOLDERS=(i3 polybar nvim)
+pushd $DOTFILES
+for folder in $(echo $STOW_FOLDERS | sed "s/,/ /g")
+do
+    echo "Removing $folder"
+    stow -D $folder
+done
+popd
