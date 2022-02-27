@@ -522,7 +522,7 @@ for_window [class="Pavucontrol"] floating disable
 #for_window [class=^Vlc$"] floating disable
 for_window [class="Wine"] floating disable
 for_window [class="Volume Control"] floating enable
-
+for_window [class="Thunar"] floating enable
 
 
 for_window [instance="script-fu"] border normal
